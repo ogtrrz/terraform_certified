@@ -3,7 +3,7 @@
 #
 # Lookup and Conditions
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "us-west-2"
@@ -58,6 +58,6 @@ resource "aws_security_group" "my_server" {
   }
   tags = {
     Name  = "My Server Dynamic SG"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

@@ -6,7 +6,7 @@
 #  Latest AMI id of Amazon Linux2
 #  Latest AMI id of Windows Server 2019
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #------------------------------------------------------------------
 provider "aws" {
   region = "eu-west-1"

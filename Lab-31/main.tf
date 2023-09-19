@@ -9,7 +9,7 @@
 # terraform refresh
 #
 # terraform console
-#  base64encode("Hello from Denis Astahov!")
+#  base64encode("Hello from Omar Gutierrez!")
 #  base64decode("SGVsbG8gZnJvbSBEZW5pcyBBc3RhaG92IQ==")
 #  sha256("Hello")
 #  keys({Name="David", City="Vanocuver", Position="DevOps Engineer",  YOB = 1977})
@@ -17,9 +17,9 @@
 #  split(",", "david,john,sindy,keren")
 #  upper("Hello")
 #  lower("HELlo")
-#  templatefile("user_data.sh.tpl", { f_name = "Denis", l_name = "Astahov", names = ["Name1", "Name2"]})
+#  templatefile("user_data.sh.tpl", { f_name = "Omar", l_name = "gutierrez", names = ["Name1", "Name2"]})
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #-------------------------------------------------------------------------------
 provider "aws" {
   region = "ca-central-1"
@@ -32,14 +32,14 @@ resource "aws_instance" "web" {
   instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.web.id]
   user_data = templatefile("user_data.sh.tpl", { // Template File
-    f_name = "Denis"
-    l_name = "Astahov"
+    f_name = "Omar"
+    l_name = "gutierrez"
     names  = ["John", "Angel", "David", "Victor", "Frank", "Melissa", "Sonya"]
   })
 
   tags = {
     Name  = "WebServer Built by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -74,7 +74,7 @@ resource "aws_security_group" "web" {
 
   tags = {
     Name  = "WebServer SG by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 

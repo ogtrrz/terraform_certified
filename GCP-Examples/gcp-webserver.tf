@@ -2,7 +2,7 @@
 # Use Terraform with GCP - Google Cloud Platform
 # Apache WebServer on Ubuntu
 #
-# Developed by Denis Astahov
+# Developed by Omar Gutierrez
 #-----------------------------------------------------------
 provider "google" {
   credentials = file("mygcp-creds.json") // export GCLOUD_KEYFILE_JSON="gcp-creds.json"

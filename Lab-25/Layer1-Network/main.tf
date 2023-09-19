@@ -4,7 +4,7 @@
 # Set S3 Backend for Terraform Remote State
 # Deploy Network Layer
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "eu-north-1"
@@ -25,7 +25,7 @@ resource "aws_vpc" "main" {
   cidr_block = var.vpc_cidr
   tags = {
     Name  = "${var.env}-vpc"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -33,7 +33,7 @@ resource "aws_internet_gateway" "main" {
   vpc_id = aws_vpc.main.id
   tags = {
     Name  = "${var.env}-igw"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -46,7 +46,7 @@ resource "aws_subnet" "public_subnets" {
   map_public_ip_on_launch = true
   tags = {
     Name  = "${var.env}-public-${count.index + 1}"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -58,7 +58,7 @@ resource "aws_route_table" "public_subnets" {
   }
   tags = {
     Name  = "${var.env}-route-public-subnets"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 

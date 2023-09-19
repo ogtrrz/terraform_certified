@@ -3,7 +3,7 @@
 #
 # Use Variables and Multiply files
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = var.aws_region

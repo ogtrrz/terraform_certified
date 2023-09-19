@@ -3,7 +3,7 @@
 #
 # Build WebServer during Bootstrap with External TEMPLATE File
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 
 provider "aws" {
@@ -17,14 +17,14 @@ resource "aws_instance" "web" {
   instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.web.id]
   user_data = templatefile("user_data.sh.tpl", { // Template File
-    f_name = "Denis"
-    l_name = "Astahov"
+    f_name = "Omar"
+    l_name = "gutierrez"
     names  = ["John", "Angel", "David", "Victor", "Frank", "Melissa", "Kitana"]
   })
 
   tags = {
     Name  = "WebServer Built by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -59,6 +59,6 @@ resource "aws_security_group" "web" {
 
   tags = {
     Name  = "WebServer SG by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

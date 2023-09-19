@@ -3,7 +3,7 @@
 #
 # Generate, Store and Retrieve Password Using AWS Secrets Manager
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #------------------------------------------------------------------
 provider "aws" {
   region = "ca-central-1"

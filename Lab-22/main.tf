@@ -3,7 +3,7 @@
 #
 # Loop Construct: for x in xyz:
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "us-west-2"
@@ -21,6 +21,6 @@ resource "aws_instance" "my_server" {
   instance_type = "t3.micro"
   tags = {
     Name  = "Server-${count.index + 1}"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

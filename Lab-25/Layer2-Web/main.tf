@@ -5,7 +5,7 @@
 # Get Outputs from another Terraform Remote State
 # Deploy Web Layer
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "eu-north-1"
@@ -57,7 +57,7 @@ chkconfig httpd on
 EOF
   tags = {
     Name  = "${var.env}-WebServer"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -87,6 +87,6 @@ resource "aws_security_group" "webserver" {
 
   tags = {
     Name  = "${var.env}-web-server-sg"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

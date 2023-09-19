@@ -3,7 +3,7 @@
 #
 # Build WebServer during Bootstrap with External STATIC File
 # ElasticIP and Lifecycle to reduce Downtime
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "us-west-2"
@@ -16,7 +16,7 @@ resource "aws_eip" "web" {
   instance = aws_instance.web.id
   tags = {
     Name  = "EIP for WebServer Built by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -28,7 +28,7 @@ resource "aws_instance" "web" {
   user_data_replace_on_change = true                 # Added in the new AWS provider!!!
   tags = {
     Name  = "WebServer Built by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 
   lifecycle {
@@ -61,6 +61,6 @@ resource "aws_security_group" "web" {
 
   tags = {
     Name  = "WebServer SG by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

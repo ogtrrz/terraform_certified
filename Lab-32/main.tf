@@ -11,7 +11,7 @@
 #   unset TF_LOG
 #   unset TF_LOG_PATH
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #-------------------------------------------------------------------------------
 
 provider "aws" {

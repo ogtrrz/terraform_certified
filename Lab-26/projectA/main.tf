@@ -3,7 +3,7 @@
 #
 # Provision VPCs using Modules
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #-------------------------------------------------------------------------------
 provider "aws" {
   region = "us-west-1"
@@ -29,7 +29,7 @@ module "my_vpc_prod" {
   public_subnet_cidrs  = ["10.200.1.0/24", "10.200.2.0/24"]
   private_subnet_cidrs = ["10.200.11.0/24", "10.200.22.0/24"]
   tags = {
-    Owner   = "ASTAHOV.NET"
+    Owner   = "gutierrez.NET"
     Code    = "777766"
     Project = "SuperPreject"
   }

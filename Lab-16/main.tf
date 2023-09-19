@@ -3,7 +3,7 @@
 #
 # Local Variables
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "us-east-1"

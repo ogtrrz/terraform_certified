@@ -16,7 +16,7 @@ EOF
 
   tags = {
     Name  = "PROD WebServer"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -41,6 +41,6 @@ resource "aws_security_group" "web-prod" {
 
   tags = {
     Name  = "Web Server SecurityGroup"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

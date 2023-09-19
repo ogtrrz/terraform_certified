@@ -3,7 +3,7 @@
 #
 # Manipulation with Remote State, Refactoring Terraform Code
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #-------------------------------------------------------------------------------
 provider "aws" {
   region = "us-west-2"

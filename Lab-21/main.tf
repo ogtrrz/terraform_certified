@@ -3,7 +3,7 @@
 #
 # Loop Construct: for_each = toset([])
 #                 for_each = {}
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "us-west-2"
@@ -21,7 +21,7 @@ resource "aws_instance" "my_server" {
   instance_type = "t3.micro"
   tags = {
     Name  = "Server-${each.value}"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -40,7 +40,7 @@ resource "aws_instance" "server" {
   }
   tags = {
     Name  = "Server-${each.key}"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -50,6 +50,6 @@ resource "aws_instance" "bastion_server" {
   instance_type = "t3.micro"
   tags = {
     Name  = "Bastion Server"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

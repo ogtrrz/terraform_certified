@@ -4,7 +4,7 @@ instance_size = "t3.large"
 key_pair      = "CanadaKey"
 
 tags = {
-  Owner       = "Denis Astahov"
+  Owner       = "Omar Gutierrez"
   Environment = "Prod"
   Project     = "Phoenix"
   Code        = "334455"

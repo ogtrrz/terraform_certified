@@ -8,7 +8,7 @@
 #  - XX Private Subnets
 #  - XX NAT Gateways in Public Subnets to give Internet access from Private Subnets
 #
-# Developed by Denis Astahov
+# Developed by Omar Gutierrez
 #----------------------------------------------------------
 
 data "aws_availability_zones" "available" {}

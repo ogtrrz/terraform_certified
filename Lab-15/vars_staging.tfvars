@@ -4,7 +4,7 @@ instance_size = "t2.micro"
 key_pair      = "CanadaKey"
 
 tags = {
-  Owner       = "Denis Astahov"
+  Owner       = "Omar Gutierrez"
   Environment = "Staging"
   Project     = "Phoenix"
   Code        = "445555"

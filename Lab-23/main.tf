@@ -3,7 +3,7 @@
 #
 # Deploy in Multiply AWS Regions
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "us-west-1"

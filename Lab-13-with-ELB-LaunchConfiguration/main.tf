@@ -8,7 +8,7 @@
 #    - Auto Scaling Group using 2 Availability Zones
 #    - Classic Load Balancer in 2 Availability Zones
 # Update to Web Servers will be via Green/Blue Deployment Strategy
-# Developed by Denis Astahov
+# Developed by Omar Gutierrez
 #------------------------------------------------------------------
 provider "aws" {
   region = "ca-central-1"
@@ -46,7 +46,7 @@ resource "aws_security_group" "web" {
   }
   tags = {
     Name  = "Web Security Group"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -76,7 +76,7 @@ resource "aws_autoscaling_group" "web" {
   dynamic "tag" {
     for_each = {
       Name   = "WebServer in ASG"
-      Owner  = "Denis Astahov"
+      Owner  = "Omar Gutierrez"
       TAGKEY = "TAGVALUE"
     }
     content {
@@ -110,7 +110,7 @@ resource "aws_elb" "web" {
   }
   tags = {
     Name  = "WebServer-HighlyAvailable-ELB"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 

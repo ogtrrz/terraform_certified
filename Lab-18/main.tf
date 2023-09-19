@@ -3,7 +3,7 @@
 #
 # Execute Commands on Remote Server
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "ca-central-1"
@@ -15,10 +15,10 @@ resource "aws_instance" "myserver" {
   ami                    = "ami-0c9bfc21ac5bf10eb"
   instance_type          = "t3.nano"
   vpc_security_group_ids = [aws_security_group.web.id]
-  key_name               = "denis-key-ca-central-1"
+  key_name               = "Omar-key-ca-central-1"
   tags = {
     Name  = "My EC2 with remote-exec"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 
   provisioner "remote-exec" {
@@ -32,7 +32,7 @@ resource "aws_instance" "myserver" {
       type        = "ssh"
       user        = "ec2-user"
       host        = self.public_ip //Same as: aws_instance.myserver.public_ip
-      private_key = file("denis-key-ca-central-1.pem")
+      private_key = file("Omar-key-ca-central-1.pem")
     }
   }
 }
@@ -56,6 +56,6 @@ resource "aws_security_group" "web" {
   }
   tags = {
     Name  = "SG by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

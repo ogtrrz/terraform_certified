@@ -3,7 +3,7 @@
 #
 # Create IAM Group Policies from the map
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 
 locals {

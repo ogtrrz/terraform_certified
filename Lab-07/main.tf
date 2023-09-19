@@ -4,7 +4,7 @@
 # Implicit dependency - by reference another resource attribute
 # Explicit dependency - by specify depend_on = []
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "eu-central-1"

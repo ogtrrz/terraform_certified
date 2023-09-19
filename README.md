@@ -2,7 +2,7 @@
 
 Course covering all features of Terraform v0.12, v0.13, v0.14, v0.15 and  v1.x
 # Terraform - From Zero to Certified Professional
-Course source code by Denis Astahov.
+Course source code by Omar Gutierrez.
 
 ### Set AWS Credentials in Windows PowerShell:
 ```
@@ -58,4 +58,4 @@ terraform workspace delete
 `${terraform.workspace}`
 
 
-Blog post: https://www.linkedin.com/pulse/hashicorp-terraform-associate-certification-exam-denis-astahov/
+Blog post: https://www.linkedin.com/pulse/hashicorp-terraform-associate-certification-exam-Omar-gutierrez/

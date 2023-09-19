@@ -3,7 +3,7 @@
 #
 # Use Dynamic Blocks
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "eu-west-2"
@@ -56,6 +56,6 @@ resource "aws_security_group" "web" {
 
   tags = {
     Name  = "Dynamic Block SG by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

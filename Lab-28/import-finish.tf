@@ -3,7 +3,7 @@
 #
 # Import Existing Resource into Terraform code Complete like this
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #-------------------------------------------------------------------------------
 provider "aws" {
   region = "us-west-2"
@@ -17,7 +17,7 @@ resource "aws_instance" "node1" {
   vpc_security_group_ids = [aws_security_group.k8s.id]
   tags = {
     "Name"  = "K8s Cluster Node-1"
-    "Owner" = "Denis Astahov"
+    "Owner" = "Omar Gutierrez"
   }
 }
 
@@ -28,7 +28,7 @@ resource "aws_instance" "node2" {
   vpc_security_group_ids = [aws_security_group.k8s.id]
   tags = {
     "Name"  = "K8s Cluster Node-2"
-    "Owner" = "Denis Astahov"
+    "Owner" = "Omar Gutierrez"
   }
 }
 
@@ -39,7 +39,7 @@ resource "aws_instance" "node3" {
   vpc_security_group_ids = [aws_security_group.k8s.id]
   tags = {
     "Name"  = "K8s Cluster Node-3"
-    "Owner" = "Denis Astahov"
+    "Owner" = "Omar Gutierrez"
   }
 }
 
@@ -69,6 +69,6 @@ resource "aws_security_group" "k8s" {
   }
 
   tags = {
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

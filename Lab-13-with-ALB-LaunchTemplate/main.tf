@@ -9,14 +9,14 @@
 #    - Application Load Balancer in 2 Availability Zones
 #    - Application Load Balancer TargetGroup
 # Update to Web Servers will be via Green/Blue Deployment Strategy
-# Developed by Denis Astahov
+# Developed by Omar Gutierrez
 #------------------------------------------------------------------
 provider "aws" {
   region = "us-west-1"
 
   default_tags {
     tags = {
-      Owner     = "Denis Astahov"
+      Owner     = "Omar Gutierrez"
       CreatedBy = "Terraform"
       Course    = "From Zero to Certified Professional"
     }

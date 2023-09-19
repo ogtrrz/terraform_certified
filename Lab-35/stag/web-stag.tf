@@ -3,7 +3,7 @@
 #
 #  Call Global Variables module and use their outputs
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #-------------------------------------------------------------------------------
 module "global" {
   source = "../global_vars"
@@ -27,7 +27,7 @@ EOF
 
   tags = merge({
     Name  = "STAGING WebServer"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }, module.global.tags)
 }
 
@@ -52,6 +52,6 @@ resource "aws_security_group" "web-stag" {
 
   tags = {
     Name  = "Web Server SecurityGroup"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

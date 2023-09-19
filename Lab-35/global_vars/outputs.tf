@@ -4,13 +4,13 @@
 #  Place here all your Global Variable as outputs
 #  and just call this module from your code
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #-------------------------------------------------------------------------------
 
 output "tags" {
   value = {
     Project = "Phonix"
-    Manager = "Denis A"
+    Manager = "Omar A"
     Country = "Canada"
   }
 }

@@ -7,7 +7,7 @@ variable "project_name" {
 }
 
 variable "owner" {
-  default = "Denis Astahov"
+  default = "Omar Gutierrez"
 }
 
 variable "tags" {

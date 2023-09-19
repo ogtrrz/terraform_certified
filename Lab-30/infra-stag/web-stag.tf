@@ -16,7 +16,7 @@ EOF
 
   tags = {
     Name  = "STAG WebServer"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -41,6 +41,6 @@ resource "aws_security_group" "web-stag" {
 
   tags = {
     Name  = "Web Server SecurityGroup"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }

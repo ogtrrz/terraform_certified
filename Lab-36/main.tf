@@ -3,7 +3,7 @@
 #
 #  Moudule which create resource in Multiply Account/Regions
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #-------------------------------------------------------------------------------
 provider "aws" { // My Root Account
   region = "us-west-2"

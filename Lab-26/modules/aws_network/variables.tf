@@ -22,7 +22,7 @@ variable "private_subnet_cidrs" {
 
 variable "tags" {
   default = {
-    Owner   = "Denis Astahov"
+    Owner   = "Omar Gutierrez"
     Project = "Phoenix"
   }
 }

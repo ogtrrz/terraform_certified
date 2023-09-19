@@ -3,7 +3,7 @@
 #
 # Outputs
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "eu-central-1"

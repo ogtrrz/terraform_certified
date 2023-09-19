@@ -18,7 +18,7 @@ variable "tags" {
   description = "Tags to Apply to Resources"
   type        = map(any)
   default = {
-    Owner       = "Denis Astahov"
+    Owner       = "Omar Gutierrez"
     Environment = "Prod"
     Project     = "Phoenix"
   }

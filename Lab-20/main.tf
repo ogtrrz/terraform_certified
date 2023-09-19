@@ -3,7 +3,7 @@
 #
 # Loop Construct: count = x
 #
-# Made by Denis Astahov
+# Made by Omar Gutierrez
 #----------------------------------------------------------
 provider "aws" {
   region = "us-west-2"
@@ -16,7 +16,7 @@ resource "aws_instance" "servers" {
   instance_type = "t3.micro"
   tags = {
     Name  = "Server Number ${count.index + 1}"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
 
@@ -31,6 +31,6 @@ resource "aws_instance" "bastion_server" {
   instance_type = "t3.micro"
   tags = {
     Name  = "Bastion Server"
-    Owner = "Denis Astahov"
+    Owner = "Omar Gutierrez"
   }
 }
